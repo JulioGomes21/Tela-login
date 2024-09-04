@@ -15,7 +15,8 @@ Telas Grandes: acima de 1201px
      }
 
      section#login {
-        width: 80vw;       
+        width: 80vw;    
+        height: 290px;   
      }
 
      section#login > div#imagem {
@@ -32,22 +33,52 @@ Telas Grandes: acima de 1201px
 
 @media screen and (min-width: 1025px) {
 
+    div.campo > input {
+        background-color: #94cfcd;
+        font-size: 1em;
+        height: 100%;
+        width: calc(100% - 46px);
+        border: 0px;
+        border-radius: 8px;
+        padding: 4px;
+        transform: translateY(-17.5px);
+    }
+
+    div.campo > span {
+        color: white;
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
      }
 
     section#login {
         width: 950px;
+        height: 400px;
     }
 
     section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
+    div#formulario > h1 {
+      font-size: 2em;  
+    }
+
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
+        font-size: 1.2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
+
